@@ -1,0 +1,23 @@
+
+public class Ex06_08 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+	
+		int i =0, hap=0;
+		
+		int aa[] = new int[100];
+		
+		while(i<100)
+		{
+			aa[i] = i+1;
+			hap = hap+aa[i];
+			i++;
+			
+			if(i==100)
+				System.out.println(hap);
+		}
+	}
+	
+
+}
