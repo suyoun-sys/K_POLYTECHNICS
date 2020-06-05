@@ -1,14 +1,14 @@
-import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.Iterator;
-import java.util.List;
+import java.util.Set;
 
 
-public class Practice1 {
+public class Practice2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		List<String> List = new ArrayList<>();
+		Set<String> List = new HashSet<String>();
 		
 		List.add("°´Ã¼ÁöÇâÇÁ·Î±×·¡¹Ö");
 		List.add("ÇÏµÓ");
@@ -16,14 +16,11 @@ public class Practice1 {
 		
 		Iterator<String> it = List.iterator();
 		
-		int a = 1;
-		
 		while(it.hasNext()) {
-			
 			String word = (String) it.next();
-			if(a==1) {
+			if(word.equals("ÇÏµÓ"))
+			{
 				System.out.println("<"+word+">");
-				a+=1;
 			}
 			else
 				System.out.println(word);
